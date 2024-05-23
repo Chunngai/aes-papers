@@ -2,6 +2,46 @@
 Paper list for automated essay scoring (AES) from 2015 to now.
 
 ## 2024
++ **Beyond Canonical Fine-tuning: Leveraging Hybrid Multi-Layer Pooled Representations of BERT for Automated Essay Scoring**
+  + Authors: Eujene Nikka V. Boquio, Prospero C. Naval, Jr.
+  + Conference: COLING
+  + Link: https://aclanthology.org/2024.lrec-main.204/
+  + <details>
+      <summary>Abstract</summary>
+      The challenging yet relevant task of automated essay scoring (AES) continuously gains attention from multiple disciplines over the years. With the advent of pre-trained large language models such as BERT, fine-tuning those models has become the dominant technique in various natural language processing (NLP) tasks. Several studies fine-tune BERT for the AES task but only utilize the final pooled output from its last layer. With BERT’s multi-layer architecture that encodes hierarchical linguistic information, we believe we can improve overall essay scoring performance by leveraging information from its intermediate layers. In this study, we diverge from the canonical fine-tuning paradigm by exploring different combinations of model outputs and single- and multi-layer pooling strategies, as well as architecture modifications to the task-specific component of the model. Using a hybrid pooling strategy, experimental results show that our best essay representa- tion combined with a simple architectural modification outperforms the average QWK score of the basic fine-tuned BERT with default output on the ASAP AES dataset, suggesting its effectiveness for the AES task and potentially other long-text tasks.
+    </details>
++ **Can Large Language Models Automatically Score Proficiency of Written Essays?**
+  + Authors: Watheq Ahmad Mansour, Salam Albatarni, Sohaila Eltanbouly, Tamer Elsayed
+  + Conference: COLING
+  + Link: https://aclanthology.org/2024.lrec-main.247/
+  + <details>
+      <summary>Abstract</summary>
+      Although several methods were proposed to address the problem of automated essay scoring (AES) in the last 50 years, there is still much to desire in terms of effectiveness. Large Language Models (LLMs) are transformer-based models that demonstrate extraordinary capabilities on various tasks. In this paper, we test the ability of LLMs, given their powerful linguistic knowledge, to analyze and effectively score written essays. We experimented with two popular LLMs, namely ChatGPT and Llama. We aim to check if these models can do this task and, if so, how their performance is positioned among the state-of-the-art (SOTA) models across two levels, holistically and per individual writing trait. We utilized prompt-engineering tactics in designing four different prompts to bring their maximum potential on this task. Our experiments conducted on the ASAP dataset revealed several interesting observations. First, choosing the right prompt depends highly on the model and nature of the task. Second, the two LLMs exhibited comparable average performance in AES, with a slight advantage for ChatGPT. Finally, despite the performance gap between the two LLMs and SOTA models in terms of predictions, they provide feedback to enhance the quality of the essays, which can potentially help both teachers and students.
+    </details>
++ **PLAES: Prompt-generalized and Level-aware Learning Framework for Cross-prompt Automated Essay Scoring**
+  + Authors: Yuan Chen, Xia Li
+  + Conference: COLING
+  + Link: https://aclanthology.org/2024.lrec-main.1118/
+  + <details>
+      <summary>Abstract</summary>
+      Current cross-prompt automatic essay scoring (AES) systems are primarily concerned with obtaining shared knowledge specific to the target prompt by using the source and target prompt essays. However, it may not be feasible in practical situations because the target prompt essays may not be available as training data. When constructing a model solely from source prompt essays, its capacity to generalize to the target prompt may be hindered by significant discrepancies among different prompt essays. In this study, a novel learning framework for cross-prompt AES is proposed in order to capture more general knowledge across prompts and improve the model’s capacity to distinguish between writing levels. To acquire generic knowledge across different prompts, a primary model is trained via meta learning with all source prompt essays. To improve the model’s ability to differentiate writing levels, we present a level-aware learning strategy consisting of a general scorer and three level scorers for low-, middle-, and high-level essays. Then, we introduce a contrastive learning strategy to bring the essay representation of the general scorer closer to its corresponding level representation and far away from the other two levels, thereby improving the system’s ability to differentiate writing levels as well as boosting scoring performance. Experimental results on public datasets illustrate the efficacy of our method.
+    </details>
++ **Transformer-based Joint Modelling for Automatic Essay Scoring and Off-Topic Detection**
+  + Authors: Sourya Dipta Das, Yash A. Vadi, Kuldeep Yadav
+  + Conference: COLING
+  + Link: https://aclanthology.org/2024.lrec-main.1457/
+  + <details>
+      <summary>Abstract</summary>
+      Automated Essay Scoring (AES) systems are widely popular in the market as they constitute a cost-effective and time-effective option for grading systems. Nevertheless, many studies have demonstrated that the AES system fails to assign lower grades to irrelevant responses. Thus, detecting the off-topic response in automated essay scoring is crucial in practical tasks where candidates write unrelated text responses to the given task in the question. In this paper, we are proposing an unsupervised technique that jointly scores essays and detects off-topic essays. The proposed Automated Open Essay Scoring (AOES) model uses a novel topic regularization module (TRM), which can be attached on top of a transformer model, and is trained using a proposed hybrid loss function. After training, the AOES model is further used to calculate the Mahalanobis distance score for off-topic essay detection. Our proposed method outperforms the baseline we created and earlier conventional methods on two essay-scoring datasets in off-topic detection as well as on-topic scoring. Experimental evaluation results on different adversarial strategies also show how the suggested method is robust for detecting possible human-level perturbations.
+    </details>
++ **Zero-shot Cross-lingual Automated Essay Scoring**
+  + Authors: Junyi He, Xia Li
+  + Conference: COLING
+  + Link: https://aclanthology.org/2024.lrec-main.1550/
+  + <details>
+      <summary>Abstract</summary>
+      Due to the difficulty of creating high-quality labelled training data for different languages, the low-resource problem is crucial yet challenging for automated essay scoring (AES). However, little attention has been paid to addressing this challenge. In this paper, we propose a novel zero-shot cross-lingual scoring method from the perspectives of pretrained multilingual representation and writing quality alignment to score essays in unseen languages. Specifically, we adopt multilingual pretrained language models as the encoder backbone to deeply and comprehensively represent multilingual essays. Motivated by the fact that the scoring knowledge for evaluating writing quality is comparable across different languages, we introduce an innovative strategy for aligning essays in a language-independent manner. The proposed strategy aims to capture shared knowledge from diverse languages, thereby enhancing the representation of essays written in unseen languages with respect to their quality. We include essay datasets in six languages (Czech, German, English, Spanish, Italian and Portuguese) to establish extensive experiments, and the results demonstrate that our method achieves state-of-the-art cross-lingual scoring performance.
+    </details>
 + **Unveiling the Tapestry of Automated Essay Scoring: A Comprehensive Investigation of Accuracy, Fairness, and Generalizability**
   + Authors: Kaixun Yang, Mladen Raković, Yuyang Li, Quanlong Guan, Dragan Gašević, Guangliang Chen
   + Conference: AAAI
@@ -84,7 +124,7 @@ Paper list for automated essay scoring (AES) from 2015 to now.
       Responding to the increasing need for automated writing evaluation (AWE) systems to assess language use beyond lexis and grammar (Burstein et al., 2016), we introduce a new approach to identify rhetorical features of stance in academic English writing. Drawing on the discourse-analytic framework of engagement in the Appraisal analysis (Martin & White, 2005), we manually annotated 4,688 sentences (126,411 tokens) for eight rhetorical stance categories (e.g., PROCLAIM, ATTRIBUTION) and additional discourse elements. We then report an experiment to train machine learning models to identify and categorize the spans of these stance expressions. The best-performing model (RoBERTa + LSTM) achieved macro-averaged F1 of .7208 in the span identification of stance-taking expressions, slightly outperforming the intercoder reliability estimates before adjudication (F1 = .6629).
     </details>
 + **Towards Extracting and Understanding the Implicit Rubrics of Transformer Based Automatic Essay Scoring Models**
-  + Authors: James Fiacco, David Adamson, Carolyn Ros
+  + Authors: James Fiacco, David Adamson, Carolyn Rose
   + Conference: ACL
   + Link: https://aclanthology.org/2023.bea-1.20/
   + <details>
@@ -589,6 +629,11 @@ Paper list for automated essay scoring (AES) from 2015 to now.
       <summary>Abstract</summary>
       End-to-end argument mining has enabled the development of new automated essay scoring (AES) systems that use argumentative features (e.g., number of claims, number of support relations) in addition to traditional legacy features (e.g., grammar, discourse structure) when scoring persuasive essays. While prior research has proposed different argumentative features as well as empirically demonstrated their utility for AES, these studies have all had important limitations.  In this paper we identify a set of desiderata for evaluating the use of argument mining for AES, introduce an end-to-end argument mining system and associated argumentative feature sets, and present the results of several studies that both satisfy the desiderata and demonstrate the value-added of argument mining for scoring persuasive essays.
     </details>
++ **ASAP++: Enriching the ASAP Automated Essay Grading Dataset with Essay Attribute Scores**
+  + Authors: Sandeep Mathias, Pushpak Bhattacharyya
+  + Conference: LREC
+  + Link: https://aclanthology.org/L18-1187/
+
 ## 2017
 + **Discourse Mode Identification in Essays**
   + Authors: Wei Song, Dong Wang, Ruiji Fu, Lizhen Liu, Ting Liu, Guoping Hu
@@ -685,3 +730,4 @@ Paper list for automated essay scoring (AES) from 2015 to now.
   + Authors: Torsten Zesch, Michael Wojatzki, Dirk Scholten-Akoun
   + Conference: WS
   + Link: https://aclanthology.org/W15-0626/
+
