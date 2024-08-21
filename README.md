@@ -2,6 +2,94 @@
 Paper list for automated essay scoring (AES) from 2015 to now.
 
 ## 2024
++ **Conundrums in Cross-Prompt Automated Essay Scoring: Making Sense of the State of the Art**
+  + Authors: Shengjie Li, Vincent Ng
+  + Conference: ACL
+  + Link: https://aclanthology.org/2024.acl-long.414/
+  + <details>
+      <summary>Abstract</summary>
+      Cross-prompt automated essay scoring (AES), an under-investigated but challenging task that has gained increasing popularity in the AES community, aims to train an AES system that can generalize well to prompts that are unseen during model training. While recently-developed cross-prompt AES models have combined essay representations that are learned via sophisticated neural architectures with so-called prompt-independent features, an intriguing question is: are complex neural models needed to achieve state-of-the-art results? We answer this question by abandoning sophisticated neural architectures and developing a purely feature-based approach to cross-prompt AES that adopts a simple neural architecture. Experiments on the ASAP dataset demonstrate that our simple approach to cross-prompt AES can achieve state-of-the-art results.
+    </details>
++ **QAES: First Publicly-Available Trait-Specific Annotations for Automated Scoring of Arabic Essays**
+  + Authors: May Bashendy, Salam Albatarni, Sohaila Eltanbouly, Eman Zahran, Hamdo Elhuseyin, Tamer Elsayed, Walid Massoud, Houda Bouamor
+  + Conference: ACL
+  + Link: https://aclanthology.org/2024.arabicnlp-1.28/
+  + <details>
+      <summary>Abstract</summary>
+      Automated Essay Scoring (AES) has emerged as a significant research problem within natural language processing, providing valuable support for educators in assessing student writing skills. In this paper, we introduce QAES, the first publicly available trait-specific annotations for Arabic AES, built on the Qatari Corpus of Argumentative Writing (QCAW). QAES includes a diverse collection of essays in Arabic, each of them annotated with holistic and trait-specific scores, including relevance, organization, vocabulary, style, development, mechanics, and grammar. In total, it comprises 195 Arabic essays (with lengths ranging from 239 to 806 words) across two distinct argumentative writing tasks. We benchmark our dataset against the state-of-the-art English baselines and a feature-based approach. In addition, we discuss the adopted guidelines and the challenges encountered during the annotation process. Finally, we provide insights into potential areas for improvement and future directions in Arabic AES research.
+    </details>
++ **TOREE: Evaluating Topic Relevance of Student Essays for Chinese Primary and Middle School Education**
+  + Authors: Xinlin Zhuang, Hongyi Wu, Xinshu Shen, Peimin Yu, Gaowei Yi, Xinhao Chen, Tu Hu, Yang Chen, Yupei Ren, Yadong Zhang, Youqi Song, Binxuan Liu, Man Lan
+  + Conference: ACL Findings
+  + Link: https://aclanthology.org/2024.findings-acl.342/
+  + <details>
+      <summary>Abstract</summary>
+      Topic relevance of an essay demands that the composition adheres to a clear theme and aligns well with the essay prompt requirements, a critical aspect of essay quality evaluation. However, existing research of Automatic Essay Scoring (AES) for Chinese essays has overlooked topic relevance and lacks detailed feedback, while Automatic Essay Comment Generation (AECG) faces much complexity and difficulty. Additionally, current Large Language Models, including GPT-4, often make incorrect judgments and provide overly impractical feedback when evaluating topic relevance. This paper introduces TOREE (Topic Relevance Evaluation), a comprehensive dataset developed to assess topic relevance in Chinese primary and middle school students’ essays, which is beneficial for AES, AECG and other applications. Moreover, our proposed two-step method utilizes TOREE through a combination of Supervised Fine-tuning and Preference Learning. Experimental results demonstrate that TOREE is of high quality, and our method significantly enhances models’ performance on two designed tasks for topic relevance evaluation, improving both automatic and human evaluations across four diverse LLMs.
+    </details>
++ **A School Student Essay Corpus for Analyzing Interactions of Argumentative Structure and Quality**
+  + Authors: Maja Stahl, Nadine Michel, Sebastian Kilsbach, Julian Schmidtke, Sara Rezat, Henning Wachsmuth
+  + Conference: NAACL
+  + Link: https://aclanthology.org/2024.naacl-long.145/
+  + <details>
+      <summary>Abstract</summary>
+      Learning argumentative writing is challenging. Besides writing fundamentals such as syntax and grammar, learners must select and arrange argument components meaningfully to create high-quality essays. To support argumentative writing computationally, one step is to mine the argumentative structure. When combined with automatic essay scoring, interactions of the argumentative structure and quality scores can be exploited for comprehensive writing support. Although studies have shown the usefulness of using information about the argumentative structure for essay scoring, no argument mining corpus with ground-truth essay quality annotations has been published yet. Moreover, none of the existing corpora contain essays written by school students specifically. To fill this research gap, we present a German corpus of 1,320 essays from school students of two age groups. Each essay has been manually annotated for argumentative structure and quality on multiple levels of granularity. We propose baseline approaches to argument mining and essay scoring, and we analyze interactions between both tasks, thereby laying the ground for quality-oriented argumentative writing support.
+    </details>
++ **Automated Essay Scoring Using Grammatical Variety and Errors with Multi-Task Learning and Item Response Theory**
+  + Authors: Kosuke Doi, Katsuhito Sudoh, Satoshi Nakamura
+  + Conference: NAACL
+  + Link: https://aclanthology.org/2024.bea-1.26/
+  + <details>
+      <summary>Abstract</summary>
+      This study examines the effect of grammatical features in automatic essay scoring (AES). We use two kinds of grammatical features as input to an AES model: (1) grammatical items that writers used correctly in essays, and (2) the number of grammatical errors. Experimental results show that grammatical features improve the performance of AES models that predict the holistic scores of essays. Multi-task learning with the holistic and grammar scores, alongside using grammatical features, resulted in a larger improvement in model performance. We also show that a model using grammar abilities estimated using Item Response Theory (IRT) as the labels for the auxiliary task achieved comparable performance to when we used grammar scores assigned by human raters. In addition, we weight the grammatical features using IRT to consider the difficulty of grammatical items and writers’ grammar abilities. We found that weighting grammatical features with the difficulty led to further improvement in performance.
+    </details>
++ **Can GPT-4 do L2 analytic assessment?**
+  + Authors: Stefano Banno, Hari Krishna Vydana, Kate Knill, Mark Gales
+  + Conference: NAACL
+  + Link: https://aclanthology.org/2024.bea-1.14/
+  + <details>
+      <summary>Abstract</summary>
+      Automated essay scoring (AES) to evaluate second language (L2) proficiency has been a firmly established technology used in educational contexts for decades. Although holistic scoring has seen advancements in AES that match or even exceed human performance, analytic scoring still encounters issues as it inherits flaws and shortcomings from the human scoring process. The recent introduction of large language models presents new opportunities for automating the evaluation of specific aspects of L2 writing proficiency. In this paper, we perform a series of experiments using GPT-4 in a zero-shot fashion on a publicly available dataset annotated with holistic scores based on the Common European Framework of Reference and aim to extract detailed information about their underlying analytic components. We observe significant correlations between the automatically predicted analytic scores and multiple features associated with the individual proficiency components.
+    </details>
++ **Can Language Models Guess Your Identity? Analyzing Demographic Biases in AI Essay Scoring**
+  + Authors: Alexander Kwako, Christopher Ormerod
+  + Conference: NAACL
+  + Link: https://aclanthology.org/2024.bea-1.7/
+  + <details>
+      <summary>Abstract</summary>
+      Large language models (LLMs) are increasingly used for automated scoring of student essays. However, these models may perpetuate societal biases if not carefully monitored. This study analyzes potential biases in an LLM (XLNet) trained to score persuasive student essays, based on data from the PERSUADE corpus. XLNet achieved strong performance based on quadratic weighted kappa, standardized mean difference, and exact agreement with human scores. Using available metadata, we performed analyses of scoring differences across gender, race/ethnicity, English language learning status, socioeconomic status, and disability status. Automated scores exhibited small magnifications of marginal differences in human scoring, favoring female students over males and White students over Black students. To further probe potential biases, we found that separate XLNet classifiers and XLNet hidden states weakly predicted demographic membership. Overall, results reinforce the need for continued fairness analyses as use of LLMs expands in education.
+    </details>
++ **Exploring LLM Prompting Strategies for Joint Essay Scoring and Feedback Generation**
+  + Authors: Maja Stahl, Leon Biermann, Andreas Nehring, Henning Wachsmuth
+  + Conference: NAACL
+  + Link: https://aclanthology.org/2024.bea-1.23/
+  + <details>
+      <summary>Abstract</summary>
+      Individual feedback can help students improve their essay writing skills. However, the manual effort required to provide such feedback limits individualization in practice. Automatically-generated essay feedback may serve as an alternative to guide students at their own pace, convenience, and desired frequency. Large language models (LLMs) have demonstrated strong performance in generating coherent and contextually relevant text. Yet, their ability to provide helpful essay feedback is unclear. This work explores several prompting strategies for LLM-based zero-shot and few-shot generation of essay feedback. Inspired by Chain-of-Thought prompting, we study how and to what extent automated essay scoring (AES) can benefit the quality of generated feedback. We evaluate both the AES performance that LLMs can achieve with prompting only and the helpfulness of the generated essay feedback. Our results suggest that tackling AES and feedback generation jointly improves AES performance. However, while our manual evaluation emphasizes the quality of the generated essay feedback, the impact of essay scoring on the generated feedback remains low ultimately.
+    </details>
++ **Fairness in Automated Essay Scoring: A Comparative Analysis of Algorithms on German Learner Essays from Secondary Education**
+  + Authors: Nils-Jonathan Schaller, Yuning Ding, Andrea Horbach, Jennifer Meyer, Thorben Jansen
+  + Conference: NAACL
+  + Link: https://aclanthology.org/2024.bea-1.18/
+  + <details>
+      <summary>Abstract</summary>
+      Pursuing educational equity, particularly in writing instruction, requires that all students receive fair (i.e., accurate and unbiased) assessment and feedback on their texts. Automated Essay Scoring (AES) algorithms have so far focused on optimizing the mean accuracy of their scores and paid less attention to fair scores for all subgroups, although research shows that students receive unfair scores on their essays in relation to demographic variables, which in turn are related to their writing competence. We add to the literature arguing that AES should also optimize for fairness by presenting insights on the fairness of scoring algorithms on a corpus of learner texts in the German language and introduce the novelty of examining fairness on psychological and demographic differences in addition to demographic differences. We compare shallow learning, deep learning, and large language models with full and skewed subsets of training data to investigate what is needed for fair scoring. The results show that training on a skewed subset of higher and lower cognitive ability students shows no bias but very low accuracy for students outside the training set. Our results highlight the need for specific training data on all relevant user groups, not only for demographic background variables but also for cognitive abilities as psychological student characteristics.
+    </details>
++ **ICLE++: Modeling Fine-Grained Traits for Holistic Essay Scoring**
+  + Authors: Shengjie Li, Vincent Ng
+  + Conference: NAACL
+  + Link: https://aclanthology.org/2024.naacl-long.468/
+  + <details>
+      <summary>Abstract</summary>
+      The majority of the recently developed models for automated essay scoring (AES) are evaluated solely on the ASAP corpus. However, ASAP is not without its limitations. For instance, it is not clear whether models trained on ASAP can generalize well when evaluated on other corpora. In light of these limitations, we introduce ICLE++, a corpus of persuasive student essays annotated with both holistic scores and trait-specific scores. Not only can ICLE++ be used to test the generalizability of AES models trained on ASAP, but it can also facilitate the evaluation of models developed for newer AES problems such as multi-trait scoring and cross-prompt scoring. We believe that ICLE++, which represents a culmination of our long-term effort in annotating the essays in the ICLE corpus, contributes to the set of much-needed annotated corpora for AES research.
+    </details>
++ **Using Large Language Models to Assess Young Students’ Writing Revisions**
+  + Authors: Tianwen Li, Zhexiong Liu, Lindsay Matsumura, Elaine Wang, Diane Litman, Richard Correnti
+  + Conference: NAACL
+  + Link: https://aclanthology.org/2024.bea-1.30/
+  + <details>
+      <summary>Abstract</summary>
+      Although effective revision is the crucial component of writing instruction, few automated writing evaluation (AWE) systems specifically focus on the quality of the revisions students undertake. In this study we investigate the use of a large language model (GPT-4) with Chain-of-Thought (CoT) prompting for assessing the quality of young students’ essay revisions aligned with the automated feedback messages they received. Results indicate that GPT-4 has significant potential for evaluating revision quality, particularly when detailed rubrics are included that describe common revision patterns shown by young writers. However, the addition of CoT prompting did not significantly improve performance. Further examination of GPT-4’s scoring performance across various levels of student writing proficiency revealed variable agreement with human ratings. The implications for improving AWE systems focusing on young students are discussed.
+    </details>
 + **Beyond Canonical Fine-tuning: Leveraging Hybrid Multi-Layer Pooled Representations of BERT for Automated Essay Scoring**
   + Authors: Eujene Nikka V. Boquio, Prospero C. Naval, Jr.
   + Conference: COLING
