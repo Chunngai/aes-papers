@@ -1,6 +1,3 @@
-# aes-papers
-Paper list for automated essay scoring (AES) from 2015 to now.
-
 ## 2024
 + **Conundrums in Cross-Prompt Automated Essay Scoring: Making Sense of the State of the Art**
   + Authors: Shengjie Li, Vincent Ng
@@ -25,6 +22,54 @@ Paper list for automated essay scoring (AES) from 2015 to now.
   + <details>
       <summary>Abstract</summary>
       Topic relevance of an essay demands that the composition adheres to a clear theme and aligns well with the essay prompt requirements, a critical aspect of essay quality evaluation. However, existing research of Automatic Essay Scoring (AES) for Chinese essays has overlooked topic relevance and lacks detailed feedback, while Automatic Essay Comment Generation (AECG) faces much complexity and difficulty. Additionally, current Large Language Models, including GPT-4, often make incorrect judgments and provide overly impractical feedback when evaluating topic relevance. This paper introduces TOREE (Topic Relevance Evaluation), a comprehensive dataset developed to assess topic relevance in Chinese primary and middle school students’ essays, which is beneficial for AES, AECG and other applications. Moreover, our proposed two-step method utilizes TOREE through a combination of Supervised Fine-tuning and Preference Learning. Experimental results demonstrate that TOREE is of high quality, and our method significantly enhances models’ performance on two designed tasks for topic relevance evaluation, improving both automatic and human evaluations across four diverse LLMs.
+    </details>
++ **Automated Essay Scoring: A Reflection on the State of the Art**
+  + Authors: Shengjie Li, Vincent Ng
+  + Conference: EMNLP
+  + Link: https://aclanthology.org/2024.emnlp-main.991/
+  + <details>
+      <summary>Abstract</summary>
+      While steady progress has been made on the task of automated essay scoring (AES) in the past decade, much of the recent work in this area has focused on developing models that beat existing models on a standard evaluation dataset. While improving performance numbers remains an important goal in the short term, such a focus is not necessarily beneficial for the long-term development of the field. We reflect on the state of the art in AES research, discussing issues that we believe can encourage researchers to think bigger than improving performance numbers with the ultimate goal of triggering discussion among AES researchers on how we should move forward.
+    </details>
++ **Autoregressive Multi-trait Essay Scoring via Reinforcement Learning with Scoring-aware Multiple Rewards**
+  + Authors: Heejin Do, Sangwon Ryu, Gary Lee
+  + Conference: EMNLP
+  + Link: https://aclanthology.org/2024.emnlp-main.917/
+  + <details>
+      <summary>Abstract</summary>
+      Recent advances in automated essay scoring (AES) have shifted towards evaluating multiple traits to provide enriched feedback. Like typical AES systems, multi-trait AES employs the quadratic weighted kappa (QWK) to measure agreement with human raters, aligning closely with the rating schema; however, its non-differentiable nature prevents its direct use in neural network training. In this paper, we propose Scoring-aware Multi-reward Reinforcement Learning (SaMRL), which integrates actual evaluation schemes into the training process by designing QWK-based rewards with a mean-squared error penalty for multi-trait AES. Existing reinforcement learning (RL) applications in AES are limited to classification models despite associated performance degradation, as RL requires probability distributions; instead, we adopt an autoregressive score generation framework to leverage token generation probabilities for robust multi-trait score predictions. Empirical analyses demonstrate that SaMRL facilitates model training, notably enhancing scoring of previously inferior prompts.
+    </details>
++ **DECOR: Improving Coherence in L2 English Writing with a Novel Benchmark for Incoherence Detection, Reasoning, and Rewriting**
+  + Authors: Xuanming Zhang, Anthony Diaz, Zixun Chen, Qingyang Wu, Kun Qian, Erik Voss, Zhou Yu
+  + Conference: EMNLP
+  + Link: https://aclanthology.org/2024.emnlp-main.639/
+  + <details>
+      <summary>Abstract</summary>
+      Coherence in writing, an aspect that L2 English learners often struggle with, is crucial in assessing L2 English writing. Existing automated writing evaluation systems primarily use basic surface linguistic features to detect coherence in writing. However, little effort has been made to correct the detected incoherence, which could significantly benefit L2 language learners seeking to improve their writing. To bridge this gap, we introduce DECOR, a novel benchmark that includes expert annotations for detecting incoherence in L2 English writing, identifying the underlying reasons, and rewriting the incoherent sentences. To our knowledge, DECOR is the first coherence assessment dataset specifically designed for improving L2 English writing, featuring pairs of original incoherent sentences alongside their expert-rewritten counterparts. Additionally, we fine-tuned models to automatically detect and rewrite incoherence in student essays. We find that incorporating specific reasons for incoherence during fine-tuning consistently improves the quality of the rewrites, achieving a level that is favored in both automatic and human evaluations.
+    </details>
++ **Beyond Agreement: Diagnosing the Rationale Alignment of Automated Essay Scoring Methods based on Linguistically-informed Counterfactuals**
+  + Authors: Yupei Wang, Renfen Hu, Zhe Zhao
+  + Conference: EMNLP Findings
+  + Link: https://aclanthology.org/2024.findings-emnlp.520/
+  + <details>
+      <summary>Abstract</summary>
+      While current Automated Essay Scoring (AES) methods demonstrate high scoring agreement with human raters, their decision-making mechanisms are not fully understood. Our proposed method, using counterfactual intervention assisted by Large Language Models (LLMs), reveals that BERT-like models primarily focus on sentence-level features, whereas LLMs such as GPT-3.5, GPT-4 and Llama-3 are sensitive to conventions & accuracy, language complexity, and organization, indicating a more comprehensive rationale alignment with scoring rubrics. Moreover, LLMs can discern counterfactual interventions when giving feedback on essays. Our approach improves understanding of neural AES methods and can also apply to other domains seeking transparency in model-driven decisions.
+    </details>
++ **Towards Explainable Chinese Native Learner Essay Fluency Assessment: Dataset, Tasks, and Method**
+  + Authors: Xinshu Shen, Hongyi Wu, Yadong Zhang, Man Lan, Xiaopeng Bai, Shaoguang Mao, Yuanbin Wu, Xinlin Zhuang, Li Cai
+  + Conference: EMNLP Findings
+  + Link: https://aclanthology.org/2024.findings-emnlp.910/
+  + <details>
+      <summary>Abstract</summary>
+      Grammatical Error Correction (GEC) is a crucial technique in Automated Essay Scoring (AES) for evaluating the fluency of essays. However, in Chinese, existing GEC datasets often fail to consider the importance of specific grammatical error types within compositional scenarios, lack research on data collected from native Chinese speakers, and largely overlook cross-sentence grammatical errors. Furthermore, the measurement of the overall fluency of an essay is often overlooked. To address these issues, we present CEFA (Chinese Essay Fluency Assessment), an extensive corpus that is derived from essays authored by native Chinese-speaking primary and secondary students and encapsulates essay fluency scores along with both coarse and fine-grained grammatical error types and corrections. Experiments employing various benchmark models on CEFA substantiate the challenge of our dataset. Our findings further highlight the significance of fine-grained annotations in fluency assessment and the mutually beneficial relationship between error types and corrections
+    </details>
++ **Unleashing Large Language Models’ Proficiency in Zero-shot Essay Scoring**
+  + Authors: Sanwoo Lee, Yida Cai, Desong Meng, Ziyang Wang, Yunfang Wu
+  + Conference: EMNLP Findings
+  + Link: https://aclanthology.org/2024.findings-emnlp.10/
+  + <details>
+      <summary>Abstract</summary>
+      Advances in automated essay scoring (AES) have traditionally relied on labeled essays, requiring tremendous cost and expertise for their acquisition. Recently, large language models (LLMs) have achieved great success in various tasks, but their potential is less explored in AES. In this paper, we show that our zero-shot prompting framework, Multi Trait Specialization (MTS), elicits LLMs’ ample potential for essay scoring. In particular, we automatically decompose writing proficiency into distinct traits and generate scoring criteria for each trait. Then, an LLM is prompted to extract trait scores from several conversational rounds, each round scoring one of the traits based on the scoring criteria. Finally, we derive the overall score via trait averaging and min-max scaling. Experimental results on two benchmark datasets demonstrate that MTS consistently outperforms straightforward prompting (Vanilla) in average QWK across all LLMs and datasets, with maximum gains of 0.437 on TOEFL11 and 0.355 on ASAP. Additionally, with the help of MTS, the small-sized Llama2-13b-chat substantially outperforms ChatGPT, facilitating an effective deployment in real applications.
     </details>
 + **A School Student Essay Corpus for Analyzing Interactions of Argumentative Structure and Quality**
   + Authors: Maja Stahl, Nadine Michel, Sebastian Kilsbach, Julian Schmidtke, Sara Rezat, Henning Wachsmuth
@@ -134,10 +179,7 @@ Paper list for automated essay scoring (AES) from 2015 to now.
   + Authors: Kaixun Yang, Mladen Raković, Yuyang Li, Quanlong Guan, Dragan Gašević, Guangliang Chen
   + Conference: AAAI
   + Link: https://ojs.aaai.org/index.php/AAAI/article/view/30254
-  + <details>
-      <summary>Abstract</summary>
-      Automatic Essay Scoring (AES) is a well-established educational pursuit that employs machine learning to evaluate student-authored essays. While much effort has been made in this area, current research primarily focuses on either (i) boosting the predictive accuracy of an AES model for a specific prompt (i.e., developing prompt-specific models), which often heavily relies on the use of the labeled data from the same target prompt; or (ii) assessing the applicability of AES models developed on non-target prompts to the intended target prompt (i.e., developing the AES models in a cross-prompt setting). Given the inherent bias in machine learning and its potential impact on marginalized groups, it is imperative to investigate whether such bias exists in current AES methods and, if identified, how it intervenes with an AES model's accuracy and generalizability. Thus, our study aimed to uncover the intricate relationship between an AES model's accuracy, fairness, and generalizability, contributing practical insights for developing effective AES models in real-world education. To this end, we meticulously selected nine prominent AES methods and evaluated their performance using seven distinct metrics on an open-sourced dataset, which contains over 25,000 essays and various demographic information about students such as gender, English language learner status, and economic status. Through extensive evaluations, we demonstrated that: (1) prompt-specific models tend to outperform their cross-prompt counterparts in terms of predictive accuracy; (2) prompt-specific models frequently exhibit a greater bias towards students of different economic statuses compared to cross-prompt models; (3) in the pursuit of generalizability, traditional machine learning models (e.g., SVM) coupled with carefully engineered features hold greater potential for achieving both high accuracy and fairness than complex neural network models.
-    </details>
+
 + **Did the Names I Used within My Essay Affect My Score? Diagnosing Name Biases in Automated Essay Scoring**
   + Authors: Ricardo Muñoz Sánchez, Simon Dobnik, Maria Irena Szawerna, Therese Lindström Tiedemann, Elena Volodina
   + Conference: EACL
@@ -263,18 +305,7 @@ Paper list for automated essay scoring (AES) from 2015 to now.
   + Authors: Shubhankar Singh, Anirudh Pupneja, Shivaansh Mital, Cheril Shah, Manish Bawkar, Lakshman Prasad Gupta, Ajit Kumar, Yaman Kumar, Rushali Gupta, Rajiv Ratn Shah
   + Conference: AAAI
   + Link: https://ojs.aaai.org/index.php/AAAI/article/view/26894
-  + <details>
-      <summary>Abstract</summary>
-      The use of Natural Language Processing (NLP) for Automated Essay Scoring (AES) has been well explored in the English language, with benchmark models exhibiting performance comparable to human scorers. However, AES in Hindi and other low-resource languages remains unexplored. In this study, we reproduce and compare state-of-the-art methods for AES in the Hindi domain. We employ classical feature-based Machine Learning (ML) and advanced end-to-end models, including LSTM Networks and Fine-Tuned Transformer Architecture, in our approach and derive results comparable to those in the English language domain. Hindi being a low-resource language, lacks a dedicated essay-scoring corpus. We train and evaluate our models using translated English essays and empirically measure their performance on our own small-scale, real-world Hindi corpus. We follow this up with an in-depth analysis discussing prompt-specific behavior of different language models implemented.
-    </details>
-+ **On the Effectiveness of Curriculum Learning in Educational Text Scoring**
-  + Authors: Zijie Zeng, Dragan Gasevic, Guangliang Chen
-  + Conference: AAAI
-  + Link: https://ojs.aaai.org/index.php/AAAI/article/view/26707
-  + <details>
-      <summary>Abstract</summary>
-      Automatic Text Scoring (ATS) is a widely-investigated task in education. Existing approaches often stressed the structure design of an ATS model and neglected the training process of the model. Considering the difficult nature of this task, we argued that the performance of an ATS model could be potentially boosted by carefully selecting data of varying complexities in the training process. Therefore, we aimed to investigate the effectiveness of curriculum learning (CL) in scoring educational text. Specifically, we designed two types of difficulty measurers: (i) pre-defined, calculated by measuring a sample's readability, length, the number of grammatical errors or unique words it contains; and (ii) automatic, calculated based on whether a model in a training epoch can accurately score the samples. These measurers were tested in both the easy-to-hard to hard-to-easy training paradigms. Through extensive evaluations on two widely-used datasets (one for short answer scoring and the other for long essay scoring), we demonstrated that (a) CL indeed could boost the performance of state-of-the-art ATS models, and the maximum improvement could be up to 4.5%, but most improvements were achieved when assessing short and easy answers; (b) the pre-defined measurer calculated based on the number of grammatical errors contained in a text sample tended to outperform the other difficulty measurers across different training paradigms.
-    </details>
+
 + **Towards automatic essay scoring of Basque language texts from a rule-based approach based on curriculum-aware systems**
   + Authors: Jose Maria Arriola, Mikel Iruskieta, Ekain Arrieta, Jon Alkorta
   + Conference: WS
@@ -356,22 +387,6 @@ Paper list for automated essay scoring (AES) from 2015 to now.
   + <details>
       <summary>Abstract</summary>
       Previous work has shown that automated essay scoring systems, in particular machine learning-based systems, are not capable of assessing the quality of essays, but are relying on essay length, a factor irrelevant to writing proficiency. In this work, we first show that state-of-the-art systems, recent neural essay scoring systems, might be also influenced by the correlation between essay length and scores in a standard dataset. In our evaluation, a very simple neural model shows the state-of-the-art performance on the standard dataset. To consider essay content without taking essay length into account, we introduce a simple neural model assessing the similarity of content between an input essay and essays assigned different scores. This neural model achieves performance comparable to the state of the art on a standard dataset as well as on a second dataset. Our findings suggest that neural essay scoring systems should consider the characteristics of datasets to focus on text quality.
-    </details>
-+ **Automated Cross-prompt Scoring of Essay Traits**
-  + Authors: Robert Ridley, Liang He, Xin-yu Dai, Shujian Huang, Jiajun Chen
-  + Conference: AAAI
-  + Link: https://ojs.aaai.org/index.php/AAAI/article/view/17620
-  + <details>
-      <summary>Abstract</summary>
-      The majority of current research in Automated Essay Scoring (AES) focuses on prompt-specific scoring of either the overall quality of an essay or the quality with regards to certain traits. In real-world applications obtaining labelled data for a target essay prompt is often expensive or unfeasible, requiring the AES system to be able to perform well when predicting scores for essays from unseen prompts. As a result, some recent research has been dedicated to cross-prompt AES. However, this line of research has thus far only been concerned with holistic, overall scoring, with no exploration into the scoring of different traits. As users of AES systems often require feedback with regards to different aspects of their writing, trait scoring is a necessary component of an effective AES system. Therefore, to address this need, we introduce a new task named Automated Cross-prompt Scoring of Essay Traits, which requires the model to be trained solely on non-target-prompt essays and to predict the holistic, overall score as well as scores for a number of specific traits for target-prompt essays. This task challenges the model's ability to generalize in order to score essays from a novel domain as well as its ability to represent the quality of essays from multiple different aspects. In addition, we introduce a new, innovative approach which builds on top of a state-of-the-art method for cross-prompt AES. Our method utilizes a trait-attention mechanism and a multi-task architecture that leverages the relationships between each trait to simultaneously predict the overall score and the score of each individual trait. We conduct extensive experiments on the widely used ASAP and ASAP++ datasets and demonstrate that our approach is able to outperform leading prompt-specific trait scoring and cross-prompt AES methods.
-    </details>
-+ **Hierarchical Coherence Modeling for Document Quality Assessment**
-  + Authors: Dongliang Liao, Jin Xu, Gongfu Li, Yiru Wang
-  + Conference: AAAI
-  + Link: https://ojs.aaai.org/index.php/AAAI/article/view/17576
-  + <details>
-      <summary>Abstract</summary>
-      Text coherence plays a key role in document quality assessment. Most existing text coherence methods only focus on similarity of adjacent sentences. However, local coherence exists in sentences with broader contexts and diverse rhetoric relations, rather than just adjacent sentences similarity. Besides, the highlevel text coherence is also an important aspect of document quality. To this end, we propose a hierarchical coherence model for document quality assessment. In our model, we implement a local attention mechanism to capture the location semantics, bilinear tensor layer for measure coherence and max-coherence pooling for acquiring high-level coherence. We evaluate the proposed method on two realistic tasks: news quality judgement and automated essay scoring.   Experimental results demonstrate the validity and superiority of our work.
     </details>
 + **Essay Quality Signals as Weak Supervision for Source-based Essay Scoring**
   + Authors: Haoran Zhang, Diane Litman
@@ -620,14 +635,6 @@ Paper list for automated essay scoring (AES) from 2015 to now.
       <summary>Abstract</summary>
       Existing document embedding approaches mainly focus on capturing sequences of words in documents. However, some document classification and regression tasks such as essay scoring need to consider discourse structure of documents. Although some prior approaches consider this issue and utilize discourse structure of text for document classification, these approaches are dependent on computationally expensive parsers. In this paper, we propose an unsupervised approach to capture discourse structure in terms of coherence and cohesion for document embedding that does not require any expensive parser or annotation. Extrinsic evaluation results show that the document representation obtained from our approach improves the performance of essay Organization scoring and Argument Strength scoring.
     </details>
-+ **eRevise: Using Natural Language Processing to Provide Formative Feedback on Text Evidence Usage in Student Writing**
-  + Authors: H. Zhang, A. Magooda, D. Litman, R. Correnti, E. Wang, L.C. Matsmura, E. Howe, R. Quintana
-  + Conference: AAAI
-  + Link: https://ojs.aaai.org/index.php/AAAI/article/view/5025
-  + <details>
-      <summary>Abstract</summary>
-      Writing a good essay typically involves students revising an initial paper draft after receiving feedback. We present eRevise, a web-based writing and revising environment that uses natural language processing features generated for rubricbased essay scoring to trigger formative feedback messages regarding students’ use of evidence in response-to-text writing. By helping students understand the criteria for using text evidence during writing, eRevise empowers students to better revise their paper drafts. In a pilot deployment of eRevise in 7 classrooms spanning grades 5 and 6, the quality of text evidence usage in writing improved after students received formative feedback then engaged in paper revision.
-    </details>
 ## 2018
 + **Augmenting Textual Qualitative Features in Deep Convolution Recurrent Neural Network for Automatic Essay Scoring**
   + Authors: Tirthankar Dasgupta, Abir Naskar, Lipika Dey, Rupsa Saha
@@ -708,14 +715,6 @@ Paper list for automated essay scoring (AES) from 2015 to now.
   + <details>
       <summary>Abstract</summary>
       We demonstrate that current state-of-the-art approaches to Automated Essay Scoring (AES) are not well-suited to capturing adversarially crafted input of grammatical but incoherent sequences of sentences. We develop a neural model of local coherence that can effectively learn connectedness features between sentences, and propose a framework for integrating and jointly training the local coherence model with a state-of-the-art AES model. We evaluate our approach against a number of baselines and experimentally demonstrate its effectiveness on both the AES task and the task of flagging adversarial input, further contributing to the development of an approach that strengthens the validity of neural essay scoring models.
-    </details>
-+ **Argument Mining for Improving the Automated Scoring of Persuasive Essays**
-  + Authors: Huy Nguyen, Diane Litman
-  + Conference: AAAI
-  + Link: https://ojs.aaai.org/index.php/AAAI/article/view/12046
-  + <details>
-      <summary>Abstract</summary>
-      End-to-end argument mining has enabled the development of new automated essay scoring (AES) systems that use argumentative features (e.g., number of claims, number of support relations) in addition to traditional legacy features (e.g., grammar, discourse structure) when scoring persuasive essays. While prior research has proposed different argumentative features as well as empirically demonstrated their utility for AES, these studies have all had important limitations.  In this paper we identify a set of desiderata for evaluating the use of argument mining for AES, introduce an end-to-end argument mining system and associated argumentative feature sets, and present the results of several studies that both satisfy the desiderata and demonstrate the value-added of argument mining for scoring persuasive essays.
     </details>
 + **ASAP++: Enriching the ASAP Automated Essay Grading Dataset with Essay Attribute Scores**
   + Authors: Sandeep Mathias, Pushpak Bhattacharyya
@@ -818,4 +817,3 @@ Paper list for automated essay scoring (AES) from 2015 to now.
   + Authors: Torsten Zesch, Michael Wojatzki, Dirk Scholten-Akoun
   + Conference: WS
   + Link: https://aclanthology.org/W15-0626/
-
