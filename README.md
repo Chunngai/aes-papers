@@ -1,6 +1,31 @@
 # aes-papers
 Paper list for automated essay scoring (AES) from 2015 to now.
 
+## 2025
++ **Can LLMs Clarify? Investigation and Enhancement of Large Language Models on Argument Claim Optimization**
+  + Authors: Yiran Wang, Ben He, Xuanang Chen, Le Sun
+  + Conference: COLING
+  + Link: https://aclanthology.org/2025.coling-main.273/
+  + <details>
+      <summary>Abstract</summary>
+      In argumentation, the claim is the foundational proposition that underpins the argument, serving as the central pillar upon which the argument is constructed. It guides the subsequent presentation of evidence, reasoning, and analysis, thereby facilitating the audience’s understanding of the core issue. Therefore, ensuring that the claim is precise and unambiguous is crucial for constructing a coherent and persuasive argument. While Large Language Models (LLMs) have demonstrated proficiency in text rewriting tasks such as style transfer and query rewriting, their application to claim optimization remains unexplored. Unlike other rewriting tasks, claim clarification requires the model to rewrite ambiguous or unclear segments of the claim, enhance the content by adding omitted key details, and eliminate redundant or verbose elements. Addressing this gap, this paper evaluates the performance of LLMs on the claim clarification task across various settings. While popular rewriting evaluation methods such as BLEU and Rouge rely on exact word matching, this paper introduces a novel semantic evaluation approach based on a sliding window mechanism. Three distinct LLMs, including LLama2, Mistral, and Qwen2, are assessed for their ability to clarify arguments through zero-shot or few-shot prompting, and supervised fine-tuning (SFT). Additionally, we propose a reinforcement learning-based clarification approach that optimally balances content preservation with claim clarity, thereby augmenting the performance of LLMs on the claim clarification task.
+    </details>
++ **Can Large Language Models Differentiate Harmful from Argumentative Essays? Steps Toward Ethical Essay Scoring**
+  + Authors: Hongjin Kim, Jeonghyun Kang, Harksoo Kim
+  + Conference: COLING
+  + Link: https://aclanthology.org/2025.coling-main.541/
+  + <details>
+      <summary>Abstract</summary>
+      This study addresses critical gaps in Automatic Essay Scoring (AES) systems and Large Language Models (LLMs) with regard to their ability to effectively identify and score harmful essays. Despite advancements in AES technology, current models often overlook ethically and morally problematic elements within essays, erroneously assigning high scores to essays that may propagate harmful opinions. In this study, we introduce the Harmful Essay Detection (HED) benchmark, which includes essays integrating sensitive topics such as racism and gender bias, to test the efficacy of various LLMs in recognizing and scoring harmful content. Our findings reveal that: (1) LLMs require further enhancement to accurately distinguish between harmful and argumentative essays, and (2) both current AES models and LLMs fail to consider the ethical dimensions of content during scoring. The study underscores the need for developing more robust AES systems that are sensitive to the ethical implications of the content they are scoring.
+    </details>
++ **T-MES: Trait-Aware Mix-of-Experts Representation Learning for Multi-trait Essay Scoring**
+  + Authors: Jiong Wang, Jie Liu
+  + Conference: COLING
+  + Link: https://aclanthology.org/2025.coling-main.81/
+  + <details>
+      <summary>Abstract</summary>
+      In current research on automatic essay scoring, related work tends to focus more on evaluating the overall quality or a single trait of prompt-specific essays. However, when scoring essays in an educational context, it is essential not only to consider the overall score but also to provide feedback on various aspects of the writing. This helps students clearly identify areas for improvement, enabling them to engage in targeted practice. Although many methods have been proposed to address the scoring issue, they still suffer from insufficient learning of trait representations and overlook the diversity and correlations between trait scores in the scoring process. To address this problem, we propose a novel multi-trait essay scoring method based on Trait-Aware Mix-of-Experts Representation Learning. Our method obtains trait-specific essay representations using a Mix-of-Experts scoring architecture. Furthermore, based on this scoring architecture, we propose a diversified trait-expert method to learn distinguishable expert weights. And to facilitate multi-trait scoring, we introduce two trait correlation learning strategies that achieve learning the correlations among traits. Experimental results demonstrate the effectiveness of our method, and compared to existing methods, it achieves a further improvement in computational efficiency.
+    </details>
 ## 2024
 + **Conundrums in Cross-Prompt Automated Essay Scoring: Making Sense of the State of the Art**
   + Authors: Shengjie Li, Vincent Ng
@@ -178,6 +203,11 @@ Paper list for automated essay scoring (AES) from 2015 to now.
       <summary>Abstract</summary>
       Due to the difficulty of creating high-quality labelled training data for different languages, the low-resource problem is crucial yet challenging for automated essay scoring (AES). However, little attention has been paid to addressing this challenge. In this paper, we propose a novel zero-shot cross-lingual scoring method from the perspectives of pretrained multilingual representation and writing quality alignment to score essays in unseen languages. Specifically, we adopt multilingual pretrained language models as the encoder backbone to deeply and comprehensively represent multilingual essays. Motivated by the fact that the scoring knowledge for evaluating writing quality is comparable across different languages, we introduce an innovative strategy for aligning essays in a language-independent manner. The proposed strategy aims to capture shared knowledge from diverse languages, thereby enhancing the representation of essays written in unseen languages with respect to their quality. We include essay datasets in six languages (Czech, German, English, Spanish, Italian and Portuguese) to establish extensive experiments, and the results demonstrate that our method achieves state-of-the-art cross-lingual scoring performance.
     </details>
++ **H-AES: Towards Automated Essay Scoring for Hindi**
+  + Authors: Shubhankar Singh, Anirudh Pupneja, Shivaansh Mital, Cheril Shah, Manish Bawkar, Lakshman Prasad Gupta, Ajit Kumar, Yaman Kumar, Rushali Gupta, Rajiv Ratn Shah
+  + Conference: AAAI
+  + Link: https://ojs.aaai.org/index.php/AAAI/article/view/26894
+
 + **Unveiling the Tapestry of Automated Essay Scoring: A Comprehensive Investigation of Accuracy, Fairness, and Generalizability**
   + Authors: Kaixun Yang, Mladen Raković, Yuyang Li, Quanlong Guan, Dragan Gašević, Guangliang Chen
   + Conference: AAAI
@@ -198,6 +228,14 @@ Paper list for automated essay scoring (AES) from 2015 to now.
   + <details>
       <summary>Abstract</summary>
       Recently, encoder-only pre-trained models such as BERT have been successfully applied in automated essay scoring (AES) to predict a single overall score. However, studies have yet to explore these models in multi-trait AES, possibly due to the inefficiency of replicating BERT-based models for each trait. Breaking away from the existing sole use of *encoder*, we propose an autoregressive prediction of multi-trait scores (ArTS), incorporating a *decoding* process by leveraging the pre-trained T5. Unlike prior regression or classification methods, we redefine AES as a score-generation task, allowing a single model to predict multiple scores. During decoding, the subsequent trait prediction can benefit by conditioning on the preceding trait scores. Experimental results proved the efficacy of ArTS, showing over 5% average improvements in both prompts and traits.
+    </details>
++ **Towards an Automatic Evaluation of (In)coherence in Student Essays**
+  + Authors: Filippo Pellegrino, Jennifer Frey, Lorenzo Zanasi
+  + Conference: CLiC-it
+  + Link: https://aclanthology.org/2024.clicit-1.82/
+  + <details>
+      <summary>Abstract</summary>
+      Coherence modeling is an important task in natural language processing (NLP) with potential impact on other NLP taskssuch as Natural Language Understanding or Automated Essay Scoring. But it can also offer interesting linguistic insightswith pedagogical implications. Early work on coherence modeling has focused on exploring definitions of the phenomenonand in recent years, neural models have entered also this field of research allowing to successfully distinguish coherent fromincoherent (synthetically created) texts or to identify the correct continuation for a given sample of texts as demonstratedfor Italian in the DisCoTex task of EVALITA 2023. In this article, we target coherence modeling for Italian language in astrongly domain-specific scenario, i.e. education. We use a corpus of student essays, collected to analyse student’s textcoherence and data augmentation techniques to experiment with the effect of various linguistically informed features ofincoherent writing on current coherence modelling strategies used in NLP. Our results show the capabilities of encodermodels to capture features of (in)coherence in a domain-specific scenario discerning natural from artificially corrupted texts.Our code is available at the following url https://gitlab.inf.unibz.it/commul/itaca/automatic_eval
     </details>
 ## 2023
 + **Aggregating Multiple Heuristic Signals as Supervision for Unsupervised Automated Essay Scoring**
@@ -304,11 +342,6 @@ Paper list for automated essay scoring (AES) from 2015 to now.
       <summary>Abstract</summary>
       Chatbots have the risk of generating offensive utterances, which must be avoided. Post-deployment, one way for a chatbot to continuously improve is to source utterance/label pairs from feedback by live users. However, among users are trolls, who provide training examples with incorrect labels. To de-troll training data, previous work removed training examples that have high user-aggregated cross-validation (CV) error. However, CV is expensive; and in a coordinated attack, CV may be overwhelmed by trolls in number and in consistency among themselves. In the present work, I address both limitations by proposing a solution inspired by methodology in automated essay scoring (AES): have multiple users rate each utterance, then perform latent class analysis (LCA) to infer correct labels. As it does not require GPU computations, LCA is inexpensive. In experiments, I found that the AES-like solution can infer training labels with high accuracy when trolls are consistent, even when trolls are the majority.
     </details>
-+ **H-AES: Towards Automated Essay Scoring for Hindi**
-  + Authors: Shubhankar Singh, Anirudh Pupneja, Shivaansh Mital, Cheril Shah, Manish Bawkar, Lakshman Prasad Gupta, Ajit Kumar, Yaman Kumar, Rushali Gupta, Rajiv Ratn Shah
-  + Conference: AAAI
-  + Link: https://ojs.aaai.org/index.php/AAAI/article/view/26894
-
 + **Towards automatic essay scoring of Basque language texts from a rule-based approach based on curriculum-aware systems**
   + Authors: Jose Maria Arriola, Mikel Iruskieta, Ekain Arrieta, Jon Alkorta
   + Conference: WS
